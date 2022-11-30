@@ -1,15 +1,11 @@
-name: Build
-on:
-  # Trigger analysis when pushing in master or pull requests, and when creating
-  # a pull request.
-  push:
-    branches:
-      - master
-  pull_request:
-    types:
-      - opened
-      - synchronize
-      - reopened
+name: GitHub Classroom Workflow
+
+on: [push]
+
+permissions:
+  checks: write
+  actions: read
+  contents: read
 
 jobs:
   build:
