@@ -27,7 +27,7 @@ jobs:
             key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
             restore-keys: ${{ runner.os }}-m2
         - name: ls
-          run: ls /spring-petclinic
+          run: ls
         - name: Cache SonarCloud packages
           uses: actions/cache@v1
           with:
